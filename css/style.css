@@ -1,23 +1,32 @@
 * {
   margin: 0;
   padding: 0;
+  outline: solid 1px red;
 }
 
 body {
   font-family: "Roboto Mono", sans-serif;
+  color: white;
+  font-weight: bold;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 2vw 1fr 2vw;
-  grid-template-rows: 3vh 10vh 3vh 100vh 3vh 12vh 3vh;
-  grid-template-areas: "l_border t_border r_border"
-                       "l_border top r_border"
-                       "l_border gap r_border"
-                       "l_border event r_border"
-                       "l_border gap2 r_border"
-                       "l_border bot r_border"
-                       "l_border b_border r_border";
+  grid-template-columns: 2vw repeat(4, 1fr 2vw);
+  grid-template-rows: 3vh 10vh 3vh 7vh 3vh repeat(2, 25vh 3vh) 7vh 3vh repeat(4, 25vh 3vh) 12vh 3vh;
+  grid-template-areas: "l_border t_border t_border t_border t_border t_border t_border t_border r_border"
+                       "l_border top top top top top top top r_border"
+                       "l_border gap gap gap gap gap gap gap r_border"
+                       "l_border title1 title1 title1 title1 title1 title1 title1 r_border"
+                       "l_border gap2 gap2 gap2 gap2 gap2 gap2 gap2 r_border"
+                       "l_border enph1 enph1 enph1 event enph2 enph2 enph2 r_border"
+                       "l_border enph1 enph1 enph1 event enph2 enph2 enph2 r_border"
+                       "l_border enph1 enph1 enph1 event enph2 enph2 enph2 r_border"
+                       "l_border gap3 gap3 gap3 gap3 gap3 gap3 gap3 r_border"
+                       "l_border title2 title2 title2 title2 title2 title2 title2 r_border"
+                       "l_border gap4 gap4 gap4 gap4 gap4 gap4 gap4 r_border"
+                       "l_border bot bot bot bot bot bot bot r_border"
+                       "l_border b_border b_border b_border b_border b_border b_border b_border r_border";
 }
 
 .top_nav {
@@ -48,6 +57,31 @@ body {
   margin: 1.5vh;
 }
 
-.events_grid {
-  grid-area: event;
+.enph1 {
+  grid-area: enph1;
+  background-color: #AAAAAA;
+}
+
+.enph2 {
+  grid-area: enph2;
+  background-color: #AAAAAA;
+}
+
+.enphasis {
+  background-color: #f6bf6b;
+  grid-area: title1;
+  display: flex;
+  align-items: center;
+}
+
+.coming {
+  background-color: #f6bf6b;
+  grid-area: title2;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0 0 0 2vw;
 }
