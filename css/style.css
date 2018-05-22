@@ -10,10 +10,15 @@ body {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 2vw repeat(4, 1fr 2vw);
-  grid-template-rows: 3vh 10vh 3vh 7vh 3vh repeat(2, 25vh 3vh) 7vh 3vh repeat(4, 25vh 3vh) 12vh 3vh;
+  grid-template-columns: 1.5vw repeat(4, 1fr 2vw);
+  grid-template-rows: 3vh 13vh 3vh 7vh 3vh repeat(2, 25vh 3vh) 7vh 3vh repeat(4, 25vh 3vh) 12vh 3vh;
   grid-template-areas: "l_border t_border t_border t_border t_border t_border t_border t_border r_border"
                        "l_border top top top top top top top r_border"
                        "l_border gap gap gap gap gap gap gap r_border"
@@ -25,6 +30,14 @@ body {
                        "l_border gap3 gap3 gap3 gap3 gap3 gap3 gap3 r_border"
                        "l_border title2 title2 title2 title2 title2 title2 title2 r_border"
                        "l_border gap4 gap4 gap4 gap4 gap4 gap4 gap4 r_border"
+                       "l_border event1 event1 event1 gap5 event2 event2 event2 r_border"
+                       "l_border gap6 gap6 gap6 gap6 event2 event2 event2 r_border"
+                       "l_border event3 event3 event3 gap11 event2 event2 event2 r_border"
+                       "l_border gap10 gap10 gap10 gap10 gap10 gap10 gap10 r_border"
+                       "l_border event4 gap7 event5 gap9 event7 event7 event7 r_border"
+                       "l_border event4 gap7 gap8 gap9 event7 event7 event7 r_border"
+                       "l_border event4 gap7 event6 gap9 event7 event7 event7 r_border"
+                       "l_border gap12 gap12 gap12 gap12 gap12 gap12 gap12 r_border"
                        "l_border bot bot bot bot bot bot bot r_border"
                        "l_border b_border b_border b_border b_border b_border b_border b_border r_border";
 }
@@ -61,10 +74,16 @@ body {
   grid-area: enph1;
   background-color: #AAAAAA;
 }
-
 .enph2 {
   grid-area: enph2;
   background-color: #AAAAAA;
+}.enph1:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.enph2:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
 }
 
 .enphasis {
@@ -84,4 +103,61 @@ body {
 .title {
   font-size: 24px;
   margin: 0 0 0 2vw;
+}
+
+.event1 {
+  grid-area: event1;
+  background-color: #AAAAAA;
+}
+.event2 {
+  grid-area: event2;
+  background-color: #AAAAAA;
+}
+.event3 {
+  grid-area: event3;
+  background-color: #AAAAAA;
+}
+.event4 {
+  grid-area: event4;
+  background-color: #AAAAAA;
+}
+.event5 {
+  grid-area: event5;
+  background-color: #AAAAAA;
+}
+.event6 {
+  grid-area: event6;
+  background-color: #AAAAAA;
+}
+.event7 {
+  grid-area: event7;
+  background-color: #AAAAAA;
+}
+.event1:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.event2:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.event3:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.event4:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.event5:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.event6:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
+}
+.event7:hover {
+  cursor: pointer;
+  background-color: #f6bf6b;
 }
