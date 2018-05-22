@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*outline: solid 1px red;*/
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #EE6F6B;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5vw 1fr 2vw 1fr 1.5vw;
+  grid-template-rows: 3vh 13vh repeat(5, 3vh 15vh) 3vh 12vh 3vh;
+  grid-template-areas: "l_border t_border t_border t_border r_border"
+                       "l_border top top top r_border"
+                       "l_border gap1 gap1 gap1 r_border"
+                       "l_border event event event r_border"
+                       "l_border event event event r_border"
+                       "l_border event event event r_border"
+                       "l_border event event event r_border"
+                       "l_border event event event r_border"
+                       "l_border gap3 gap3 gap3 r_border"
+                       "l_border map gap4 share r_border"
+                       "l_border map gap4 share r_border"
+                       "l_border map gap4 share r_border"
+                       "l_border gap5 gap5 gap5 r_border"
+                       "l_border bot bot bot r_border"
+                       "l_border b_border b_border b_border r_border";
+}
+
+.top_nav {
+  grid-area: top;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #FF7272;
+}
+
+.logo {
+  margin: 2vh 0 0 2vh;
+}
+
+.bot_nav {
+  grid-area: bot;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #FF7272;
+}
+
+.si_logo, .social, .news {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin: 1.5vh;
+}
+
+.event {
+  grid-area: event;
+  background-color: #f6bf6b;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.title {
+  font-size: 64px;
+}
+.organizer {
+  font-size: 48px;
+}
+.date {
+  font-size: 42px;
+}
+.local {
+  font-size: 32px;
+}
+
+.info_geral {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 3vh 2vw;
+}
+
+.nam_org {
+  height: 40%;
+  margin: 2vh 0 0 2vw;
+}
+
+.share {
+  grid-area: share;
+  background-color: #AAAAAA;
+}
+
+.links {
+  margin: 2vh 2vw;
+  font-size: 32px;
+}
+
+.map {
+  width: 100%;
+  grid-area: map;
+}
+
+.map_image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  margin-top: 2vh;
+  font-size: 32px;
+}
+
+.top_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  margin: 2vh 2vw 0 0;
+}

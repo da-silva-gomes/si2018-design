@@ -115,8 +115,14 @@ a {
 .e_title {
   font-size: 64px;
 }
+.e_title_small {
+  font-size: 24px;
+}
 .organizer {
   font-size: 24px;
+}
+.organizer_small {
+  font-size: 16px;
 }
 .type {
   font-size: 14px;
@@ -125,8 +131,14 @@ a {
 .date {
   font-size: 36px;
 }
+.date_small {
+  font-size: 20px;
+}
 .local {
   font-size: 24px;
+}
+.local_small {
+  font-size: 14px;
 }
 
 .event1 {
@@ -193,7 +205,7 @@ a {
 .default_i {
   display: flex;
   align-items: flex-end;
-  margin: 0 2vw 2vh 0;
+  margin: 0 2vw 0 0;
 }
 
 .info_geral {
