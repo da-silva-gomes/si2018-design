@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: solid 1px red;
+  /*outline: solid 1px red;*/
 }
 
 body {
@@ -70,6 +70,13 @@ a {
   margin: 1.5vh;
 }
 
+.events {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .enph1 {
   grid-area: enph1;
   background-color: #AAAAAA;
@@ -103,6 +110,23 @@ a {
 .title {
   font-size: 24px;
   margin: 0 0 0 2vw;
+}
+
+.e_title {
+  font-size: 64px;
+}
+.organizer {
+  font-size: 24px;
+}
+.type {
+  font-size: 14px;
+  margin: 0 0 2vh 0;
+}
+.date {
+  font-size: 36px;
+}
+.local {
+  font-size: 24px;
 }
 
 .event1 {
@@ -160,4 +184,20 @@ a {
 .event7:hover {
   cursor: pointer;
   background-color: #f6bf6b;
+}
+
+.nam_org {
+  margin: 2vh 0 0 2vw;
+}
+
+.default_i {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 2vw 2vh 0;
+}
+
+.info_geral {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 3vh 2vw;
 }
