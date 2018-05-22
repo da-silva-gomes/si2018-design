@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2vw 1fr 2vw;
+  grid-template-rows: 3vh 10vh 3vh 100vh 3vh 12vh 3vh;
+  grid-template-areas: "l_border t_border r_border"
+                       "l_border top r_border"
+                       "l_border gap r_border"
+                       "l_border event r_border"
+                       "l_border gap2 r_border"
+                       "l_border bot r_border"
+                       "l_border b_border r_border";
+}
+
+.top_nav {
+  grid-area: top;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #FF7272;
+}
+
+.logo {
+  margin: 2vh 0 0 2vh;
+}
+
+.bot_nav {
+  grid-area: bot;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #FF7272;
+}
+
+.si_logo, .social, .news {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin: 1.5vh;
+}
+
+.events_grid {
+  grid-area: event;
+}
